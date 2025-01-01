@@ -1,0 +1,227 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmud Hassan Firoz - Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-nav">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Mahmud Hassan Firoz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center" id="about">
+        <blockquote class="text-center mt-4 fst-italic" style="color: #eee; font-size: 1.5rem;">
+            "Bridging the gap between ideas and solutions with code."
+        </blockquote>
+    
+        <div class="container">
+            <h1 class="display-4 typing-effect">Welcome! I'm <span style="color: var(--secondary-color);">Mahmud Hassan Firoz</span></h1>
+            <p class="lead">Backend Developer | Python with Django | Software Developer</p>
+    
+            <div class="row mt-5 align-items-center">
+                <div class="col-lg-4 text-center">
+                    <img src="{% static 'images/frz.jpg' %}" alt="Mahmud Hassan Firoz" class="profile-img mb-4">
+                </div>
+                <div class="col-lg-8 text-start">
+                    <h2>About Me</h2>
+                    <p class="fs-5">
+                        I am a passionate Python Backend Developer specializing in Django-based web applications, 
+                        with over 2 years of experience delivering user-focused, scalable, and high-quality solutions. 
+                        Based in Bangladesh, I am dedicated to transforming complex ideas into seamless digital experiences.
+                    </p>
+                    <p class="fs-5">
+                        My key strengths include rapid iteration, task prioritization, and delivering standout content. 
+                        Let's collaborate to bring your vision to life!
+                    </p>
+                    <div class="skills mt-4">
+                        <h5 class="text-uppercase">Skills</h5>
+                        <ul class="skills-list d-flex flex-wrap">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>SQL</li>
+                            <li>REST API</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mt-5">
+                <a href="{% static 'cv/my_cv.pdf' %}" class="btn btn-lg">
+                    <i class="bi bi-download me-2"></i>Download CV
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="services">
+        <h2 class="text-center mb-4">My Services</h2>
+        <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center h-100 shadow-lg rounded">
+                                <div class="card-body">
+                                    <i class="bi bi-laptop fs-1 text-primary mb-3"></i>
+                                    <h5 class="card-title">Web Application Development</h5>
+                                    <p class="card-text">
+                                        SPA | PWA | Full-stack Development | SaaS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center h-100 shadow-lg rounded">
+                                <div class="card-body">
+                                    <i class="fas fa-cogs fs-1 text-success mb-3"></i>
+                                    <h5 class="card-title">Custom Software Development</h5>
+                                    <p class="card-text">
+                                        CRM | ERP | Business Tools | Inventory Management
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center h-100 shadow-lg rounded">
+                                <div class="card-body">
+                                    <i class="fas fa-store fs-1 text-warning mb-3"></i>
+                                    <h5 class="card-title">E-commerce Development</h5>
+                                    <p class="card-text">
+                                        Online Stores | Payment Gateway | Order Systems
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center h-100 shadow-lg rounded">
+                                <div class="card-body">
+                                    <i class="fas fa-code-branch fs-1 text-info mb-3"></i>
+                                    <h5 class="card-title">API Development</h5>
+                                    <p class="card-text">
+                                        Custom APIs | Third-party Integration | Internal APIs
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center h-100 shadow-lg rounded">
+                                <div class="card-body">
+                                    <i class="fas fa-bug fs-1 text-danger mb-3"></i>
+                                    <h5 class="card-title">Software Maintenance</h5>
+                                    <p class="card-text">
+                                        Bug Fixing | Optimization | Security Updates
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container my-5" id="projects">
+        <h2 class="text-center mb-4">My Projects</h2>
+        <div class="row">
+            {% for project in projects %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-lg rounded">
+                    <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description|truncatewords:20 }}</p>
+                        <div class="d-flex justify-content-between">
+                            {% if project.live_link %}
+                            <a href="{{ project.live_link }}" class="btn h-40" target="_blank">View Live</a>
+                            {% endif %}
+                            {% if project.github_link %}
+                            <a href="{{ project.github_link }}" class="btn h-40" target="_blank">View Code</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <p class="text-center">No projects available at the moment.</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="py-5" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Mahmud Hassan Firoz | All Rights Reserved</p>
+            <div>
+                <a href="https://www.facebook.com/mhfiroz.babu/" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/mahmud-hassan-firoz/" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mahmudhassanfiroz" class="text-white me-3"><i class="fab fa-github"></i></a>
+                <a href="https://www.hackerrank.com/profile/mahmudhassanfir1" class="text-white me-3"><i class="fab fa-hackerrank"></i></a>
+                <a href="https://leetcode.com/u/mahmudhassanfiroz/" class="text-white me-3"><i class="fab fa-hackerrank"></i></a>
+                <a href="https://codeforces.com/profile/mahmudhassanfiroz90" class="text-white me-3"><i class="fab fa-hackerrank"></i></a> 
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
